@@ -64,10 +64,10 @@ export default function Hero() {
 
 
             {/* CENTER IMAGE */}
-            <div className="w-[100vw] h-[100vh] md:w-[55vw]   bg-amber-300 flex ">
+            <div className="w-[100vw] h-[100vh] md:w-[55vw]    flex ">
 
                 <img
-                    src="/manish123.png"
+                    src="/monish.png"
                     alt="Monish"
                     className={`top-0 z-0 w-screen h-[100vh]  object-cover md:w-[full] `}
                 />
@@ -116,6 +116,8 @@ export default function Hero() {
                     </p>
 
                 </div>
+
+
             </div>
 
 

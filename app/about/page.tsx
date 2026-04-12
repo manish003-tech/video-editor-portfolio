@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Transition from "@/components/TransitionPage";
 import Navbar from "@/components/Navbar";
+import Image from "next/image";
 
 export default function About() {
     return (
@@ -22,6 +23,15 @@ export default function About() {
                     </h1>
                 </motion.div>
 
+                <motion.div
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.8 }}
+                    className="max-w-4xl"
+                >
+                    <Image src="/monish.png" alt="" width={100} height={100} />
+                </motion.div>
+
                 {/* SPACING */}
                 <div className="h-20"></div>
 
@@ -33,7 +43,7 @@ export default function About() {
                     className="max-w-2xl text-lg md:text-xl text-gray-700 leading-relaxed"
                 >
                     <p>
-                        I’m MONISH, a video editor focused on short-form and long-form content.
+                        I’m MANISH, a video editor focused on short-form and long-form content.
                         I help creators and brands turn raw footage into engaging, scroll-stopping videos.
                     </p>
 

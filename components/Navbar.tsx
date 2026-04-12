@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className={`flex justify-between bg-[#9da1a0] items-center px-5 py-5 md:px-10 md:py-8   text-black ${inder.className}`}>
 
                 {/* LOGO */}
-                <div className="text-sm md:text-xl text-white ">© MONISH</div>
+                <Link href='/' className="text-sm md:text-xl text-white ">© MONISH</Link>
 
                 {/* DESKTOP NAV */}
                 <div className="hidden md:flex gap-10 text-xl  text-white">
@@ -39,7 +39,7 @@ export default function Navbar() {
 
                 {/* MOBILE MENU BUTTON */}
                 <button
-                    className="md:hidden text-sm cursor-pointer"
+                    className="md:hidden text-sm cursor-pointer text-white"
                     onClick={() => setOpen(true)}
                 >
                     MENU

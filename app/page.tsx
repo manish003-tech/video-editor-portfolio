@@ -9,6 +9,7 @@ import About from '@/components/About'
 import PageReveal from '@/components/PageReveal'
 import Transition from '@/components/TransitionPage';
 import Contact from './contact/page';
+import SeeMore from '@/components/SeeMore';
 
 
 
@@ -23,6 +24,7 @@ const page = () => {
 
       <Transition>
         <Work />
+        <SeeMore />
       </Transition>
 
       <Transition>

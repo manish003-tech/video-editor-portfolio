@@ -1,6 +1,7 @@
 'use client'
 
 import VideoCard from "./VideoCard";
+import Link from "next/link";
 
 
 const videos = [
@@ -26,6 +27,10 @@ export default function Work() {
                     />
                 ))}
             </div>
+            {/* 
+            <Link href='/work' className="h-10 w-auto flex  m-8 justify-center ">
+                <button className="rounded-xl  bg-black text-white px-4 py-2 md:h-10 md:w-50 ">SEE MORE</button>
+            </Link> */}
         </div>
     );
 }
