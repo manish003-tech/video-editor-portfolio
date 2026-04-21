@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useTransform } from "framer-motion";
+import { easeOut, motion, useScroll, useTransform } from "framer-motion";
 import { Inder } from "next/font/google";
 import { useRef } from "react";
 import { ArrowDownRight, Zap, Smartphone, Play } from "lucide-react";
@@ -14,7 +14,7 @@ const fadeUp = {
     initial: { opacity: 0, y: 40 },
     whileInView: { opacity: 1, y: 0 },
     viewport: { once: true },
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] }
+    transition: { duration: 0.8, ease: easeOut }
 };
 
 export default function About2() {
@@ -159,7 +159,7 @@ export default function About2() {
 
             {/* CTA */}
             <section className="py-32 px-[6vw] text-center bg-[#9da1a0] text-black">
-                <motion.div {...fadeUp}>
+                <motion.div >
                     <h2 className="text-6xl md:text-9xl font-bold tracking-tighter mb-12">READY TO <br /> LEVEL UP?</h2>
                     <p className="text-2xl mb-12 max-w-2xl mx-auto opacity-80">
                         Let's turn your vision into high-impact visual stories. Currently accepting new projects.
