@@ -13,9 +13,12 @@ export default function PageReveal() {
         const greetings = [
             "Hello",
             "Bonjour",
+            "你好",
             "नमस्ते",
             "Hola",
             "Ciao",
+            "안녕하세요",
+
         ];
 
         const tl = gsap.timeline({
@@ -26,16 +29,16 @@ export default function PageReveal() {
 
         greetings.forEach((word, index) => {
             tl.to(textRef.current, {
-                opacity: 0,
-                y: 20,
-                duration: 0.1,
+                opacity: 1,
+                // y: 20,
+                duration: 0.01,
                 onComplete: () => {
                     if (textRef.current) textRef.current.innerText = word;
                 },
             }).to(textRef.current, {
                 opacity: 1,
-                y: 0,
-                duration: 0.1,
+                // y: 0,
+                duration: 0.08,
                 ease: "power4.out",
             });
 

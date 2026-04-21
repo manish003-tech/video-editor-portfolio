@@ -52,13 +52,24 @@ export default function Hero() {
 
 
             {/* LOCATION */}
-            <div className="flex md:flex  md:flex-col hidden md:w-[20vw] ">
+            <div className="flex  md:flex  md:flex-col md:w-[20vw] ">
+
+                <Image
+                    src="/browse.gif"
+                    alt="Browse animation"
+                    width={250}
+                    height={250}
+                    loading="lazy"
+                    unoptimized
+                    className="browser w-[15vw] bottom-5 right-[15vw] md:w-[2.5vw] md:mt-[35vh] absolute md:left-[16.7vw] z-10 md:top-[11vh] rounded-full "
+                />
+
                 <Image
                     src="/location.svg"
                     alt="Location"
-                    width={500}
-                    height={500}
-                    className="md:w-[25vw] md:mt-[38vh] "
+                    width={800}
+                    height={800}
+                    className="md:w-[40vw] md:mt-[35vh] hidden md:block"
                 />
             </div>
 
@@ -67,9 +78,9 @@ export default function Hero() {
             <div className="w-[100vw] h-[100vh] md:w-[55vw]    flex ">
 
                 <img
-                    src="/monish.png"
-                    alt="Monish"
-                    className={`top-0 z-0 w-screen h-[100vh]  object-cover md:w-[full] `}
+                    src="/manish12.png"
+                    alt="Manish"
+                    className={`top-0 z-0 w-screen h-[100vh]  object-cover md:w-[full] md:object-contain `}
                 />
             </div>
 
