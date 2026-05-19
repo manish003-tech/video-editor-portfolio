@@ -28,7 +28,7 @@ export default function VideoCard({ thumbnail, video, index = 0 }: Props) {
                 >
                     <img
                         src={thumbnail}
-                        className="w-full h-[600px] object-cover transition-transform duration-700 ease-out group-hover:scale-105"
+                        className="aspect-[9/16] w-full object-cover rounded-[30px]"
                         alt="Video thumbnail"
                     />
 
@@ -45,10 +45,12 @@ export default function VideoCard({ thumbnail, video, index = 0 }: Props) {
             ) : (
                 <video
                     src={video}
-                    className="w-full h-[600px] object-cover rounded-[30px]"
+                    className="aspect-[9/16] w-full object-cover rounded-[30px]"
                     autoPlay
+                    loop
                     controls
                     muted
+
                 />
             )}
         </motion.div>

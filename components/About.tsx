@@ -8,13 +8,13 @@ export default function AboutPage() {
     return (
         <div className="min-h-screen bg-[#0f0f0f] text-white px-6 md:px-16 py-20 flex flex-col justify-between">
 
-            {/* TOP SECTION */}
+
             <div>
 
-                {/* Heading + Avatar */}
+
                 <div className="flex items-start gap-6">
                     <Image
-                        src="/manish123.png" // replace with your client image
+                        src="/manish12.png"
                         alt="profile"
                         width={80}
                         height={80}
@@ -30,15 +30,17 @@ export default function AboutPage() {
                 <div className="border-t border-white/20 my-16 relative">
 
                     {/* Floating Button */}
-                    <div className="absolute right-0 -top-14 md:-top-20 ">
-                        <div className="w-25 h-25 md:w-40 md:h-40 bg-blue-600 rounded-full flex items-center justify-center relative group cursor-pointer">
-                            <span className="text-xs md:text-sm">Start a Coversation</span>
+                    <Link href={"/contact"}>
+                        <div className="absolute right-0 -top-14 md:-top-20 ">
+                            <div className="w-25 h-25 md:w-40 md:h-40 bg-blue-600 rounded-full flex items-center justify-center relative group cursor-pointer">
+                                <span className="text-[10px] md:text-sm text-white">Start a Coversation</span>
 
-                            <ArrowUpRight
-                                className="absolute top-3 md:top-6 right-3 md:right-6 opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition"
-                            />
+                                <ArrowUpRight
+                                    className="absolute top-3 md:top-6 right-3 md:right-6 opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition"
+                                />
+                            </div>
                         </div>
-                    </div>
+                    </Link>
                 </div>
 
                 {/* Contact Info */}
