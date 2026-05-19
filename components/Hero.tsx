@@ -61,7 +61,7 @@ export default function Hero() {
                     height={250}
                     loading="lazy"
                     unoptimized
-                    className="browser w-[15vw] bottom-5 right-[15vw] md:w-[2.5vw] md:mt-[35vh] absolute md:left-[16.7vw] z-10 md:top-[11vh] rounded-full "
+                    className="browser w-[12vw] left-35 bottom-2 right-[15vw] md:w-[2.5vw] md:mt-[35vh] absolute md:left-[16.7vw] z-10 md:top-[11vh] rounded-full "
                 />
 
                 <Image
@@ -80,7 +80,7 @@ export default function Hero() {
                 <img
                     src="/manish12.png"
                     alt="Manish"
-                    className={`top-0 z-0 w-screen h-[100vh]  object-cover md:w-[full] md:object-contain `}
+                    className={`top-0 z-0 w-screen h-[100vh]  object-cover md:w-[full md:object-contain `}
                 />
             </div>
 
@@ -92,7 +92,7 @@ export default function Hero() {
                 <ArrowDownRight className="w-6 h-6 md:w-[3vw] md:h-[4vh] mt-[25vh] text-white" />
 
                 <div className={`${inder.className} text-white text-2xl md:text-5xl md:mt-[10vh]`}>
-                    Video Editor
+                    Growth Partner
                 </div>
 
             </div>
@@ -106,28 +106,35 @@ export default function Hero() {
 
 
             {/* RIGHT TEXT */}
-            <div className={`absolute bottom-0 left-5 bottom-5 text-white text-2xl md:right-0.5  ${inder.className}`}>
-                <ArrowDownRight className=" mb-10 left-[1vw]  w-9 md:hidden" />
-                Real Estate Content <br />
-                Growth Editor
+            <div className={`absolute  left-1 bottom-5 text-white text-2xl md:right-0.5  ${inder.className}`}>
+                <ArrowDownRight className=" mb-5 left-[1vw]  w-9 md:hidden" />
+                Content, Positioning & <br />
+                Demand
             </div>
 
+            <div className="absolute bottom-[8rem] w-full overflow-hidden py-3 md:bottom-15">
 
-            <div className="absolute bottom-50 w-full overflow-hidden  py-3 md:bottom-15">
-                <div ref={containerRef} className="flex whitespace-nowrap">
+                <div
+                    ref={containerRef}
+                    className="flex whitespace-nowrap will-change-transform"
+                    style={{ width: "fit-content" }}
+                >
 
-                    {/* First Copy */}
-                    <p ref={firstTextRef} className="text-white text-9xl md:text-[18rem]  font-medium px-4">
-                        Manish Kushwaha —  Manish Kushwaha —  Manish Kushwaha —
+                    <p
+                        ref={firstTextRef}
+                        className="text-white text-[22vw] md:text-[18rem] leading-none font-medium flex-shrink-0"
+                    >
+                        Manish Kushwaha — Manish Kushwaha — Manish Kushwaha —
                     </p>
 
-                    {/* Second Copy (for seamless loop) */}
-                    <p ref={secondTextRef} className="text-white text-9xl md:text-[18rem] font-medium px-4">
-                        Manish Kushwaha —  Manish Kushwaha —  Manish Kushwaha —
+                    <p
+                        ref={secondTextRef}
+                        className="text-white text-[22vw] md:text-[18rem] leading-none font-medium flex-shrink-0"
+                    >
+                        Manish Kushwaha — Manish Kushwaha — Manish Kushwaha —
                     </p>
 
                 </div>
-
 
             </div>
 

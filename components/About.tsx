@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import Link from "next/link";
 
 export default function AboutPage() {
     return (
@@ -20,8 +21,8 @@ export default function AboutPage() {
                         className="rounded-full object-cover"
                     />
 
-                    <h1 className="text-[60px] md:text-[120px] leading-[0.9] font-medium">
-                        Let’s work <br /> together
+                    <h1 className="text-[30px] md:text-[120px] leading-[0.9] font-medium">
+                        Let’s Build Something <br /> Valuable
                     </h1>
                 </div>
 
@@ -29,12 +30,12 @@ export default function AboutPage() {
                 <div className="border-t border-white/20 my-16 relative">
 
                     {/* Floating Button */}
-                    <div className="absolute right-0 -top-20">
-                        <div className="w-40 h-40 bg-blue-600 rounded-full flex items-center justify-center relative group cursor-pointer">
-                            <span className="text-sm">Get in touch</span>
+                    <div className="absolute right-0 -top-14 md:-top-20 ">
+                        <div className="w-25 h-25 md:w-40 md:h-40 bg-blue-600 rounded-full flex items-center justify-center relative group cursor-pointer">
+                            <span className="text-xs md:text-sm">Start a Coversation</span>
 
                             <ArrowUpRight
-                                className="absolute top-6 right-6 opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition"
+                                className="absolute top-3 md:top-6 right-3 md:right-6 opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1 transition"
                             />
                         </div>
                     </div>
@@ -66,9 +67,10 @@ export default function AboutPage() {
                 </div>
 
                 <div className="flex gap-6">
-                    <span>Instagram</span>
-                    <span>Twitter</span>
-                    <span>LinkedIn</span>
+                    <Link href="https://www.instagram.com/manisheditspro/">Instagram</Link>
+                    <Link href="https://x.com/manisheditspro">Twitter</Link>
+                    <Link href="https://www.linkedin.com/in/manish-kushwaha-3130312bb/">LinkedIn</Link>
+                    <Link href="https://www.facebook.com/profile.php?id=100095642138565/">Facebbook</Link>
                 </div>
 
             </div>

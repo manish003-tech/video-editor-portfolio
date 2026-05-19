@@ -42,11 +42,11 @@ export default function Work() {
             <motion.div {...fadeUp} className="mb-20">
                 <div className="flex items-center gap-4 mb-8">
                     <div className="h-[1px] w-12 bg-[#9da1a0]" />
-                    <span className="text-[#9da1a0] uppercase tracking-widest text-sm">Portfolio</span>
+                    <span className="text-[#9da1a0] uppercase tracking-widest text-sm">Execution</span>
                 </div>
 
                 <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8">
-                    SELECTED <span className="text-[#9da1a0]">WORK</span>
+                    PROOF OF    <span className="text-[#9da1a0]">Work</span>
                 </h2>
 
                 <div className="h-[2px] w-full bg-gray-900 overflow-hidden">

@@ -15,10 +15,10 @@ export default function Contact() {
                 className="max-w-3xl"
             >
                 <h1 className="text-4xl md:text-7xl font-bold leading-tight">
-                    Let’s work together.
+                    Let's Collaborate
                 </h1>
                 <p className="mt-4 text-gray-600 text-lg">
-                    Have a project in mind? Send me a message.
+                    Strategic growth starts with clarity, positioning, and execution.
                 </p>
             </motion.div>
 

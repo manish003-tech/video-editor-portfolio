@@ -47,9 +47,9 @@ export default function About2() {
                     transition={{ duration: 1, delay: 0.2 }}
                     className="text-[12vw] md:text-[8vw] leading-[0.85] font-bold tracking-tighter mb-12"
                 >
-                    I CRAFT <br />
-                    <span className="text-[#9da1a0]">STORIES</span> THAT <br />
-                    RETAIN.
+                    I Build <br />
+                    <span className="text-[#9da1a0]">BRANDS</span> THAT <br />
+                    Attract Demand.
                 </motion.h1>
 
                 <div className="grid md:grid-cols-2 gap-12 items-end">
@@ -59,7 +59,7 @@ export default function About2() {
                         transition={{ duration: 1, delay: 0.5 }}
                         className="text-xl md:text-2xl text-gray-400 max-w-xl leading-relaxed"
                     >
-                        Specializing in high-retention video editing for Real Estate and Content Creators who want to dominate their niche.
+                        Strategic content and positioning systems for real estate professionals building long-term authority.
                     </motion.p>
 
                     <motion.div
@@ -82,13 +82,13 @@ export default function About2() {
                         <img
                             src="/manish2.jpeg"
                             alt="Manish Kushwaha"
-                            className="w-full h-full object-cover grayscale brightness-75"
+                            className="w-full h-full md:h-[80vh] object-cover md:object-contain grayscale brightness-75"
                         />
                     </motion.div>
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
                     <div className="absolute bottom-12 left-12">
                         <h2 className="text-4xl md:text-6xl font-bold">Manish Kushwaha</h2>
-                        <p className="text-[#9da1a0] text-xl mt-2 italic">Visionary Video Editor</p>
+                        <p className="text-[#9da1a0] text-xl mt-2 italic">Growth Partner</p>
                     </div>
                 </div>
             </section>
@@ -96,7 +96,7 @@ export default function About2() {
             {/* SERVICES / EXPERTISE */}
             <section className="py-32 px-[6vw] bg-[#0f0f0f]">
                 <motion.div {...fadeUp} className="mb-20">
-                    <h2 className="text-5xl md:text-7xl font-bold mb-8">Expertise</h2>
+                    <h2 className="text-5xl md:text-7xl font-bold mb-8">Growth System</h2>
                     <div className="h-[2px] w-full bg-gray-900 overflow-hidden">
                         <motion.div
                             initial={{ x: "-100%" }}
@@ -109,9 +109,9 @@ export default function About2() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {[
-                        { icon: <Smartphone className="w-8 h-8" />, title: "Short-Form Mastery", desc: "Reels, TikToks, and Shorts designed for maximum retention and virality." },
-                        { icon: <Play className="w-8 h-8" />, title: "Long-Form Content", desc: "YouTube storytelling that builds connection and keeps viewers subscribed." },
-                        { icon: <Zap className="w-8 h-8" />, title: "Growth Strategy", desc: "Not just editing—optimizing hooks and pacing to trigger platform algorithms." }
+                        { icon: <Smartphone className="w-8 h-8" />, title: "Attenstion System ", desc: "Short-form content designed to capture attention and compound authority over time." },
+                        { icon: <Play className="w-8 h-8" />, title: "Positioning Strategy", desc: "Strategic messaging and content frameworks built to differentiate brands in competitive markets." },
+                        { icon: <Zap className="w-8 h-8" />, title: "Demand Generation", desc: "Content systems focused on trust, inbound demand, and long-term brand growth." }
                     ].map((item, index) => (
                         <motion.div
                             key={index}
@@ -133,12 +133,13 @@ export default function About2() {
             <section className="py-32 px-[6vw]">
                 <div className="grid md:grid-cols-2 gap-20 items-center">
                     <motion.div {...fadeUp}>
-                        <h2 className="text-4xl md:text-6xl font-bold mb-10">THE <span className="text-[#9da1a0]">PHILOSOPHY</span></h2>
+                        <h2 className="text-4xl md:text-6xl font-bold mb-10">Our <span className="text-[#9da1a0]">PRINCIPLES</span></h2>
                         <p className="text-2xl text-gray-400 italic mb-8 leading-relaxed">
-                            "In an age of 3-second attention spans, pacing isn't just a technique—it's a survival skill."
+                            Content should create <span className="text-[#9da1a0]">leverage</span>, not just <span className="text-[#9da1a0]">impressions</span>
                         </p>
                         <p className="text-lg text-gray-500 leading-relaxed">
-                            My approach blends cinematic aesthetics with data-driven editing. Every cut is intentional. Every sound effect is placed to evoke emotion. Every frame is polished to ensure that your audience doesn't just watch your content—they experience it.
+                            I believe content is a positioning tool, not just a distribution channel.
+                            Every decision — messaging, pacing, structure, and narrative — should strengthen long-term brand authority and demand.
                         </p>
                     </motion.div>
                     {/* <motion.div
@@ -160,16 +161,17 @@ export default function About2() {
             {/* CTA */}
             <section className="py-32 px-[6vw] text-center bg-[#9da1a0] text-black">
                 <motion.div >
-                    <h2 className="text-6xl md:text-9xl font-bold tracking-tighter mb-12">READY TO <br /> LEVEL UP?</h2>
+                    <h2 className="text-6xl md:text-9xl font-bold tracking-tighter mb-12">BUILD SOMETHING
+                        <br />THAT COMPOUNDS</h2>
                     <p className="text-2xl mb-12 max-w-2xl mx-auto opacity-80">
-                        Let's turn your vision into high-impact visual stories. Currently accepting new projects.
+                        Designed for brands that value positioning, consistency, and strategic growth.
                     </p>
                     <a
                         href="https://wa.me/yournumber"
                         target="_blank"
                         className="inline-block px-12 py-6 bg-black text-white rounded-full text-xl font-bold hover:scale-105 transition-transform"
                     >
-                        SEND A MESSAGE
+                        Start a Conversation
                     </a>
                 </motion.div>
             </section>

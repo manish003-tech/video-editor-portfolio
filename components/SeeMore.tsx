@@ -18,7 +18,7 @@ export default function SeeMore() {
                     href="/work"
                     className="group inline-flex items-center gap-3 px-10 py-5 rounded-full border border-gray-800 text-white text-lg font-bold uppercase tracking-widest hover:border-[#9da1a0]/50 hover:bg-[#9da1a0]/5 transition-all duration-500"
                 >
-                    View All Work
+                    Expore the Work
                     <ArrowRight className="w-5 h-5 text-[#9da1a0] transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
             </motion.div>

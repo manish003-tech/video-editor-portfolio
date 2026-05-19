@@ -11,11 +11,15 @@ export default function PageReveal() {
 
     useEffect(() => {
         const greetings = [
+            "नमस्ते",
             "Hello",
+            " Cheers",
+            "السلام عليكم ",
+            "こんにちは",
             "Bonjour",
+            "Hallo",
             "你好",
             "नमस्ते",
-            "Hola",
             "Ciao",
             "안녕하세요",
 
