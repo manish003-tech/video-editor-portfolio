@@ -1,16 +1,14 @@
 "use client";
 
 import Marquee from "./Marquee";
-import { Inder } from "next/font/google";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ArrowDownLeft, ArrowDownRight, ArrowRight } from "lucide-react";
 
-const inder = Inder({
-    subsets: ["latin"],
-    weight: "400",
-})
+
+
+
 
 export default function Hero() {
 
@@ -47,7 +45,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className=" h-screen md:h-screen  w-full  md:top-0  md:w-full bg-[#9da1a0] flex  ">
+        <section className={` h-screen md:h-screen  w-full  md:top-0  md:w-full bg-[#9da1a0] flex `}>
 
 
 
@@ -91,7 +89,7 @@ export default function Hero() {
 
                 <ArrowDownRight className="w-6 h-6 md:w-[3vw] md:h-[4vh] mt-[25vh] text-white" />
 
-                <div className={`${inder.className} text-white text-2xl md:text-5xl md:mt-[10vh]`}>
+                <div className={` text-white text-2xl md:text-5xl md:mt-[10vh]`}>
                     Growth Partner
                 </div>
 
@@ -106,7 +104,7 @@ export default function Hero() {
 
 
             {/* RIGHT TEXT */}
-            <div className={`absolute  left-1 bottom-5 text-white text-2xl md:right-0.5  ${inder.className}`}>
+            <div className={`absolute  left-1 bottom-5 text-white text-2xl md:right-0.5  `}>
                 <ArrowDownRight className=" mb-5 left-[1vw]  w-9 md:hidden" />
                 Content, Positioning & <br />
                 Demand
@@ -122,14 +120,14 @@ export default function Hero() {
 
                     <p
                         ref={firstTextRef}
-                        className="text-white text-[22vw] md:text-[18rem] leading-none font-medium flex-shrink-0"
+                        className="sat text-white  font-satoshi font-bold text-[22vw] md:text-[18rem] leading-none  flex-shrink-0"
                     >
                         Manish Kushwaha — Manish Kushwaha — Manish Kushwaha —
                     </p>
 
                     <p
                         ref={secondTextRef}
-                        className="text-white text-[22vw] md:text-[18rem] leading-none font-medium flex-shrink-0"
+                        className="sat text-white font-satoshi font-bold  text-[22vw] md:text-[18rem] leading-none flex-shrink-0"
                     >
                         Manish Kushwaha — Manish Kushwaha — Manish Kushwaha —
                     </p>

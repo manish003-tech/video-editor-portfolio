@@ -1,15 +1,14 @@
 "use client";
 
 import { easeOut, motion, useScroll, useTransform } from "framer-motion";
-import { Inder } from "next/font/google";
 import { useRef } from "react";
 import { ArrowDownRight, Zap, Smartphone, Play } from "lucide-react";
+import { Inter } from "next/font/google";
 
-const inder = Inder({
+const inter = Inter({
     subsets: ["latin"],
     weight: "400",
 });
-
 const fadeUp = {
     initial: { opacity: 0, y: 40 },
     whileInView: { opacity: 1, y: 0 },
@@ -27,7 +26,7 @@ export default function About2() {
     const imgY = useTransform(scrollYProgress, [0, 1], ["-10%", "10%"]);
 
     return (
-        <div className={`bg-[#0a0a0a] text-white selection:bg-[#9da1a0] selection:text-black ${inder.className}`}>
+        <div className={`bg-[#0a0a0a] text-white selection:bg-[#9da1a0] selection:text-black ${inter.className}`}>
 
             {/* HERO / INTRO */}
             <section className="min-h-screen flex flex-col justify-center px-[6vw] pt-32">
@@ -45,10 +44,10 @@ export default function About2() {
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
-                    className="text-[12vw] md:text-[8vw] leading-[0.85] font-bold tracking-tighter mb-12"
+                    className="text-[12vw] font-satoshi font-black md:text-[8vw] leading-[0.85] text-[#9da1a0] tracking-tighter mb-12"
                 >
                     I Build <br />
-                    <span className="text-[#9da1a0]">BRANDS</span> THAT <br />
+                    <span className="text-white font-inter font-bold ">BRANDS</span>  THAT <br />
                     Attract Demand.
                 </motion.h1>
 
@@ -57,7 +56,7 @@ export default function About2() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1, delay: 0.5 }}
-                        className="text-xl md:text-2xl text-gray-400 max-w-xl leading-relaxed"
+                        className="text-xl  md:text-2xl text-gray-400 max-w-xl leading-relaxed"
                     >
                         Strategic content and positioning systems for real estate professionals building long-term authority.
                     </motion.p>
@@ -87,8 +86,8 @@ export default function About2() {
                     </motion.div>
                     <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-transparent opacity-60" />
                     <div className="absolute bottom-12 left-12">
-                        <h2 className="text-4xl md:text-6xl font-bold">Manish Kushwaha</h2>
-                        <p className="text-[#9da1a0] text-xl mt-2 italic">Growth Partner</p>
+                        <h2 className="text-4xl font-satoshi md:text-6xl font-bold">Manish Kushwaha</h2>
+                        <p className="text-[#9da1a0] font-inter  text-xl mt-2 italic">Growth Partner</p>
                     </div>
                 </div>
             </section>
@@ -96,7 +95,7 @@ export default function About2() {
             {/* SERVICES / EXPERTISE */}
             <section className="py-32 px-[6vw] bg-[#0f0f0f]">
                 <motion.div {...fadeUp} className="mb-20">
-                    <h2 className="text-5xl md:text-7xl font-bold mb-8">Growth System</h2>
+                    <h2 className="text-5xl font-satoshi font-black md:text-7xl  mb-8">Growth System</h2>
                     <div className="h-[2px] w-full bg-gray-900 overflow-hidden">
                         <motion.div
                             initial={{ x: "-100%" }}
@@ -133,8 +132,8 @@ export default function About2() {
             <section className="py-32 px-[6vw]">
                 <div className="grid md:grid-cols-2 gap-20 items-center">
                     <motion.div {...fadeUp}>
-                        <h2 className="text-4xl md:text-6xl font-bold mb-10">Our <span className="text-[#9da1a0]">PRINCIPLES</span></h2>
-                        <p className="text-2xl text-gray-400 italic mb-8 leading-relaxed">
+                        <h2 className="text-4xl md:text-6xl font-bold mb-10">OUR <span className="text-[#9da1a0]">PRINCIPLES</span></h2>
+                        <p className="text-2xl text-gray-400 mb-8 leading-relaxed">
                             Content should create <span className="text-[#9da1a0]">leverage</span>, not just <span className="text-[#9da1a0]">impressions</span>
                         </p>
                         <p className="text-lg text-gray-500 leading-relaxed">
@@ -161,9 +160,9 @@ export default function About2() {
             {/* CTA */}
             <section className="py-32 px-[6vw] text-center bg-[#9da1a0] text-black">
                 <motion.div >
-                    <h2 className="text-6xl md:text-9xl font-bold tracking-tighter mb-12">BUILD SOMETHING
+                    <h2 className="text-6xl font-satoshi font-black md:text-9xl tracking-tighter mb-12">BUILD SOMETHING
                         <br />THAT COMPOUNDS</h2>
-                    <p className="text-2xl mb-12 max-w-2xl mx-auto opacity-80">
+                    <p className="text-2xl font-inter font-bold mb-12 max-w-2xl mx-auto opacity-80">
                         Designed for brands that value positioning, consistency, and strategic growth.
                     </p>
                     <a

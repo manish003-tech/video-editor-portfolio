@@ -1,4 +1,3 @@
-'use client';
 
 
 import Navbar from '@/components/Navbar'
@@ -11,6 +10,8 @@ import Transition from '@/components/TransitionPage';
 import Contact from './contact/page';
 import SeeMore from '@/components/SeeMore';
 import About2 from '@/components/About2';
+import GetYT from '@/app/Videos/GetYT';
+
 
 
 
@@ -30,6 +31,10 @@ const page = () => {
       <Transition>
         <Work />
         <SeeMore />
+      </Transition>
+
+      <Transition>
+        <GetYT />
       </Transition>
 
       <Transition>

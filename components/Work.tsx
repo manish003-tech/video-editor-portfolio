@@ -3,12 +3,8 @@
 import VideoCard from "./VideoCard";
 import Link from "next/link";
 import { easeOut, motion } from "framer-motion";
-import { Inder } from "next/font/google";
 
-const inder = Inder({
-    subsets: ["latin"],
-    weight: "400",
-});
+
 
 const fadeUp = {
     initial: { opacity: 0, y: 40 },
@@ -18,25 +14,29 @@ const fadeUp = {
 };
 
 export const videos = [
-    { thumbnail: "/thambnail/1.png", video: "/video/1.mp4" },
-    { thumbnail: "/thambnail/2.png", video: "/video/2.mp4" },
-    { thumbnail: "/thambnail/3.png", video: "/video/3.mp4" },
-    { thumbnail: "/thambnail/4.png", video: "/video/4.mp4" },
-    { thumbnail: "/thambnail/5.png", video: "/video/5.mp4" },
+    { thumbnail: "/thambnail/9.png", video: "/video/9.mp4" },
+    { thumbnail: "/thambnail/10.png", video: "/video/10.mp4" },
     { thumbnail: "/thambnail/6.png", video: "/video/6.mp4" },
+
+
 ];
 
 export const allVideos = [
     ...videos,
+    { thumbnail: "/thambnail/3.png", video: "/video/3.mp4" },
     { thumbnail: "/thambnail/7.png", video: "/video/7.mp4" },
     { thumbnail: "/thambnail/8.png", video: "/video/8.mp4" },
-    { thumbnail: "/thambnail/9.png", video: "/video/9.mp4" },
-    { thumbnail: "/thambnail/10.png", video: "/video/10.mp4" },
+    { thumbnail: "/thambnail/4.png", video: "/video/4.mp4" },
+    { thumbnail: "/thambnail/5.png", video: "/video/5.mp4" },
+
+    { thumbnail: "/thambnail/1.png", video: "/video/1.mp4" },
+    { thumbnail: "/thambnail/2.png", video: "/video/2.mp4" },
+
 ];
 
 export default function Work() {
     return (
-        <div className={`bg-[#0a0a0a] text-white py-32 px-[6vw] ${inder.className}`}>
+        <div className={`bg-[#0a0a0a] text-white py-32 px-[6vw]`}>
 
             {/* Section Header — matches About page hero label */}
             <motion.div {...fadeUp} className="mb-20">
@@ -45,8 +45,8 @@ export default function Work() {
                     <span className="text-[#9da1a0] uppercase tracking-widest text-sm">Execution</span>
                 </div>
 
-                <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-8">
-                    PROOF OF    <span className="text-[#9da1a0]">Work</span>
+                <h2 className="text-5xl md:text-7xl text-[#9da1a0]  mb-8">
+                    PROOF OF    <span className="text-white font-satoshi font-bold tracking-tighter mb-8">WORK</span>
                 </h2>
 
                 <div className="h-[2px] w-full bg-gray-900 overflow-hidden">
