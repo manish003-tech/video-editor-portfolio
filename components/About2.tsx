@@ -158,17 +158,17 @@ export default function About2() {
             </section>
 
             {/* CTA */}
-            <section className="py-32 px-[6vw] text-center bg-[#9da1a0] text-black">
+            <section className="py-32 px-[6vw] text-center bg-[#9da1a0] ">
                 <motion.div >
-                    <h2 className="text-6xl font-satoshi font-black md:text-9xl tracking-tighter mb-12">BUILD SOMETHING
+                    <h2 className="text-[2.5rem] text-black font-satoshi font-black md:text-9xl tracking-tighter mb-12">BUILD SOMETHING
                         <br />THAT COMPOUNDS</h2>
-                    <p className="text-2xl font-inter font-bold mb-12 max-w-2xl mx-auto opacity-80">
+                    <p className="text-2xl text-black font-inter font-bold mb-12 max-w-2xl mx-auto opacity-80">
                         Designed for brands that value positioning, consistency, and strategic growth.
                     </p>
                     <a
                         href="https://wa.me/yournumber"
                         target="_blank"
-                        className="inline-block px-12 py-6 bg-black text-white rounded-full text-xl font-bold hover:scale-105 transition-transform"
+                        className="inline-block px-12 py-6 bg-black text-white rounded-full text-l font-bold hover:scale-105 transition-transform"
                     >
                         Start a Conversation
                     </a>
