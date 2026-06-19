@@ -56,7 +56,7 @@ export default function Hero() {
     }, []);
 
     return (
-        <section className={` h-screen md:h-screen  w-full  md:top-0  md:w-full bg-[#9da1a0] flex `}>
+        <section className={` h-[85vh] md:h-screen md:h-screen  w-full  md:top-0  md:w-full bg-[#9da1a0] flex `}>
 
 
 

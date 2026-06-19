@@ -26,7 +26,7 @@ export default function Navbar() {
       <div className={`flex justify-between bg-[#9da1a0] items-center px-5 py-5 md:px-10 md:py-8 ${inder.className}`}>
 
         {/* LOGO */}
-        <Link href='/' className="text-sm md:text-xl text-white  font-satoshi">© MANISH</Link>
+        <Link href='/' className="text-md md:text-xl text-white  font-satoshi">© MANISH</Link>
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex gap-10 text-xl  text-white">
