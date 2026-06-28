@@ -1,38 +1,12 @@
 import { GetYTVideos } from "@/app/Videos/GetYtVideos";
-
-
-type Video = {
-    id: {
-        kind: string;
-        videoId: string;
-    };
-    snippet: {
-
-        title: string;
-
-    };
-};
-
-type YoutubeResponse = {
-    items: Video[];
-}
+import GetYTClient from "./GetYTClient";
 
 export default async function GetYT() {
-    const videos: YoutubeResponse = await GetYTVideos();
-    console.log(videos);
+    const videos = await GetYTVideos();
+
     return (
-        <div className="grid grid-col-1 md:grid-cols-3 gap-10 py-24 px-[6vw]">
-            {
-                videos.items.map((video: Video) => (
-                    <div key={video.id.videoId}>
-                        <iframe src={`https://www.youtube.com/embed/${video.id.videoId}`} allowFullScreen title="YouTube video player" className="aspect-video w-full rounded-3xl" />
-
-                    </div>
-                ))
-            }
-
-        </div>
-
-    )
-
+        <section className="bg-[#0a0a0a] text-white">
+            <GetYTClient videos={videos} />
+        </section>
+    );
 }

@@ -1,10 +1,9 @@
 "use client";
 
-import Marquee from "./Marquee";
 import Image from "next/image";
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
-import { ArrowDownLeft, ArrowDownRight, ArrowRight } from "lucide-react";
+import { ArrowDownRight } from "lucide-react";
 
 
 
@@ -20,22 +19,30 @@ export default function Hero() {
     const directionRef = useRef(-1);
 
     useEffect(() => {
-        if (!firstTextRef.current || !secondTextRef.current) return;
+        const firstText = firstTextRef.current;
+        const secondText = secondTextRef.current;
 
-        gsap.set([firstTextRef.current, secondTextRef.current], {
+        if (!firstText || !secondText) return;
+
+        const marqueeItems = [firstText, secondText];
+        let isActive = true;
+
+        gsap.set(marqueeItems, {
             xPercent: 0,
         });
 
-        let animationFrameId: number;
+        let animationFrameId: number | undefined;
 
         const animate = () => {
+            if (!isActive) return;
+
             let xPercent = xPercentRef.current;
 
             if (xPercent <= -100) xPercent = 0;
             if (xPercent > 0) xPercent = -100;
 
             gsap.set(
-                [firstTextRef.current, secondTextRef.current],
+                marqueeItems,
                 { xPercent }
             );
 
@@ -50,8 +57,11 @@ export default function Hero() {
         }, 4000);
 
         return () => {
+            isActive = false;
             clearTimeout(timeoutId);
-            cancelAnimationFrame(animationFrameId);
+            if (animationFrameId !== undefined) {
+                cancelAnimationFrame(animationFrameId);
+            }
         };
     }, []);
 

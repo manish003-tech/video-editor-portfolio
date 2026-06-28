@@ -55,7 +55,7 @@ ${formData.message}
         className="max-w-3xl"
       >
         <h1 className="text-4xl md:text-7xl font-bold leading-tight">
-          Let's Collaborate
+          Let&apos;s Collaborate
         </h1>
 
         <p className="mt-4 text-gray-600 text-lg">
@@ -117,5 +117,4 @@ ${formData.message}
     </div>
   );
 }
-
 
